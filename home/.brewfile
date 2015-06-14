@@ -1,6 +1,6 @@
 #homebrew
 
-homebrew/php/phpmyadmin3
+tap homebrew/php/phpmyadmin3
 install phpmyadmin
 
 install hub
