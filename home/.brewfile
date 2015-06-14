@@ -43,7 +43,7 @@ cask install sourcetree #/Applications/SourceTree.app
 cask install textexpander #/Applications/TextExpander.app
 
 # Cask is found, but no applications are found (could be fonts, system settins, or installed in other directory.
-cask install seil
+#cask install seil
 cask install xmarks-safari
 
 # Apps installed directly instead of by Cask in brew-cask
