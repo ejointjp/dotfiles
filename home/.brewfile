@@ -1,10 +1,10 @@
 #homebrew
 
-install hub
+homebrew/php/phpmyadmin3
 install phpmyadmin
+
+install hub
 install mysql
-
-
 
 # Cask applications
 # Please copy these lines to your Brewfile and use with `brew file install`.
