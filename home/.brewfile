@@ -1,10 +1,8 @@
 #homebrew
 
-install httpd24
-install phpmyadmin
 install hub
-
-
+install phpmyadmin
+install mysql
 
 
 
