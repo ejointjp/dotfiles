@@ -1,0 +1,116 @@
+#homebrew
+
+install httpd24
+install phpmyadmin
+install hub
+
+
+
+
+
+# Cask applications
+# Please copy these lines to your Brewfile and use with `brew file install`.
+
+# Main tap repository for brew-cask
+install caskroom/cask/brew-cask
+
+# Apps installed by Cask in brew-cask
+cask install 1password #/Applications/1Password 5.app
+cask install alfred #/Applications/Alfred 2.app
+#cask install alfred #/Applications/Alfred Preferences.app
+cask install appcleaner #/Applications/AppCleaner.app
+cask install atom #/Applications/Atom.app
+cask install bettertouchtool #/Applications/BetterTouchTool.app
+cask install cd-to #/Applications/cd to.app
+cask install clamxav #/Applications/ClamXav.app
+cask install copy #/Applications/Copy.app
+cask install coteditor #/Applications/CotEditor.app
+cask install couleurs #/Applications/Couleurs.app
+cask install dash #/Applications/Dash.app
+cask install dropbox #/Applications/Dropbox.app
+cask install droplr #/Applications/Droplr.app
+cask install easyfind #/Applications/EasyFind.app
+cask install evernote #/Applications/Evernote.app
+cask install firefox #/Applications/Firefox.app
+cask install forklift #/Applications/ForkLift.app
+cask install google-chrome #/Applications/Google Chrome.app
+cask install google-japanese-ime #/Applications/GoogleJapaneseInput.localized
+cask install iterm2 #/Applications/iTerm.app
+cask install karabiner #/Applications/Karabiner.app
+cask install libreoffice #/Applications/LibreOffice.app
+cask install sequel-pro #/Applications/Sequel Pro.app
+cask install shupapan #/Applications/Shupapan.app
+cask install sitesucker #/Applications/SiteSucker.app
+cask install sourcetree #/Applications/SourceTree.app
+cask install textexpander #/Applications/TextExpander.app
+
+# Cask is found, but no applications are found (could be fonts, system settins, or installed in other directory.
+cask install seil
+cask install xmarks-safari
+
+# Apps installed directly instead of by Cask in brew-cask
+#cask install powerphotos #/Applications/Photos.app
+
+# Apps installed from AppStore
+#/Applications/GarageBand.app
+#/Applications/iMovie.app
+#/Applications/iPhoto.app
+#/Applications/Keynote.app
+#/Applications/LINE.app
+#/Applications/MiniUsage.app
+#/Applications/Numbers.app
+#/Applications/Pages.app
+#/Applications/QaLL.app
+
+# Apps installed but no casks are available
+# (System applications or directory installed.)
+#/Applications/App Store.app
+#/Applications/Automator.app
+#/Applications/Calculator.app
+#/Applications/Calendar.app
+#/Applications/Chess.app
+#/Applications/Contacts.app
+#/Applications/Dashboard.app
+#/Applications/Dictionary.app
+#/Applications/DVD Player.app
+#/Applications/FaceTime.app
+#/Applications/Font Book.app
+#/Applications/Game Center.app
+#/Applications/iBooks.app
+#/Applications/Image Capture.app
+#/Applications/iTunes.app
+#/Applications/Launchpad.app
+#/Applications/Mail.app
+#/Applications/Maps.app
+#/Applications/Messages.app
+#/Applications/Mission Control.app
+#/Applications/Notes.app
+#/Applications/Photo Booth.app
+#/Applications/Preview.app
+#/Applications/QuickTime Player.app
+#/Applications/Reminders.app
+#/Applications/Safari.app
+#/Applications/Stickies.app
+#/Applications/System Preferences.app
+#/Applications/TextEdit.app
+#/Applications/Time Machine.app
+#/Applications/Xmarks for Safari.app
+#/Users/ejointjp/Applications/Chrome Apps.localized
+#/Applications/Utilities/Activity Monitor.app
+#/Applications/Utilities/AirPort Utility.app
+#/Applications/Utilities/Audio MIDI Setup.app
+#/Applications/Utilities/Bluetooth File Exchange.app
+#/Applications/Utilities/Boot Camp Assistant.app
+#/Applications/Utilities/ColorSync Utility.app
+#/Applications/Utilities/Console.app
+#/Applications/Utilities/Digital Color Meter.app
+#/Applications/Utilities/Disk Utility.app
+#/Applications/Utilities/Grab.app
+#/Applications/Utilities/Grapher.app
+#/Applications/Utilities/Keychain Access.app
+#/Applications/Utilities/Migration Assistant.app
+#/Applications/Utilities/Script Editor.app
+#/Applications/Utilities/System Information.app
+#/Applications/Utilities/Terminal.app
+#/Applications/Utilities/VoiceOver Utility.app
+#/Applications/Utilities/X11.app
