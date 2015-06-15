@@ -1,6 +1,17 @@
 #homebrew
 
-homebrew/php/phpmyadmin3
+install git
+
+tap homebrew/dupes
+tap homebrew/apache
+install httpd24
+
+tap homebrew/versions
+tap homebrew/homebrew-php
+
+install php56 --homebrew-apxs
+
+tap homebrew/php
 install phpmyadmin
 
 install hub

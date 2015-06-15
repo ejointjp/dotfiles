@@ -1,3 +1,5 @@
+# phpbrew
+source ~/.phpbrew/bashrc
 
 # homebrew
 alias cask="brew cask "
@@ -90,7 +92,3 @@ alias gdi='git diff'
 alias gdc='git diff --cached'
 alias gad='git add'
 alias gitlog='git log --oneline'
-
-#
-# Goolge Search by Safari
-#

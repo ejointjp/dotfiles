@@ -15,7 +15,9 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # for Homebrew php55
-# export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
+#export PATH="$(brew --prefix homebrew/php/php55)/bin:$PATH"
+export PATH=$(brew --prefix php56)/bin:$PATH
+
 
 #path
 export PATH=/usr/local/bin:$PATH
