@@ -10,6 +10,12 @@ alias mysqlstop='mysql.server stop'
 alias webstart='apachestart; mysqlstart'
 alias webstop='apachestop; mysqlstop'
 
+# Apache, PHP
+alias sethosts='sudo mv /etc/hosts /etc/hosts.original && sudo ln -s ~/Dropbox/Sites/apache/hosts /etc/hosts'
+alias setphpini56='mv /usr/local/etc/php/5.6/php.ini /usr/local/etc/php/5.6/php.ini.original && ln -s ~/Dropbox/Sites/apache/5.6/php.ini /usr/local/etc/php/5.6/php.ini'
+alias sethttpdconf24='mv /usr/local/etc/apache2/2.4/httpd.conf /usr/local/etc/apache2/2.4/httpd.conf.original && ln -s ~/Dropbox/Sites/apache/2.4/httpd.conf /usr/local/etc/apache2/2.4/httpd.conf'
+alias setvhostsconf24='mv /usr/local/etc/apache2/2.4/extra/httpd-vhosts.conf //usr/local/etc/apache2/2.4/extra/httpd-vhosts.conf.original && ln -s ~/Dropbox/Sites/apache/2.4/httpd-vhosts.conf /usr/local/etc/apache2/2.4/extra/httpd-vhosts.conf'
+
 # npm
 alias npmi='npm i -D'
 
@@ -22,18 +28,17 @@ alias dropbox='cd ~/Dropbox'
 
 alias bashrc='atom ~/.bashrc'
 alias bashprofile='atom ~/.bash_profile'
-alias brewfile='atom ~/.bluefile'
+alias brewfile='atom ~/.brewfile'
+alias gitignore='atom ~/.gitignore'
 
-alias cpscceleton='cp -r ~/Sites/htdocs/scceleton/dist scceleton'
+alias phpini56='atom /usr/local/etc/php/5.6/php.ini'
+alias hosts='sudo atom /etc/hosts'
+alias httpdconf24='atom /usr/local/etc/apache2/2.4/httpd.conf'
+alias vhostsconf24='atom /usr/local/etc/apache2/2.4/extra/httpd-vhosts.conf'
+alias themes='open wp-content/themes/'
 alias gulppress='cp -r ~/Web/gulp/gulppress gulppress'
 alias gulpapp='cp -r ~/Web/gulp/gulpapp gulpapp'
-alias bourbonlink='ln -s ~/Libs/sass/bourbon'
-alias neatlink='ln -s ~/Libs/sass/neat'
-alias scceletonlink='ln -s ~/Libs/sass/scceleton;
-ln -s ~/Libs/sass/libs;
-ln -s ~/Libs/fonts;
-cp -r ~/Libs/sass/my-theme my-theme.original;
-cp ~/Libs/sass/style.scss style.scss.original'
+alias scceletonlink='ln -s ~/Git/scceleton && cp -r ~/Libs/sass/my-theme my-theme.original && cp ~/Libs/sass/style.scss style.scss.original'
 
 
 alias sasslink='ln -s ~/Libs/sass/libs;
