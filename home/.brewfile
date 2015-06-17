@@ -1,22 +1,3 @@
-#homebrew
-
-install git
-
-tap homebrew/dupes
-tap homebrew/apache
-install httpd24
-
-tap homebrew/versions
-tap homebrew/homebrew-php
-
-install php56 --homebrew-apxs
-
-tap homebrew/php
-install phpmyadmin
-
-install hub
-install mysql
-
 # Cask applications
 # Please copy these lines to your Brewfile and use with `brew file install`.
 
@@ -42,6 +23,7 @@ cask install easyfind #/Applications/EasyFind.app
 cask install evernote #/Applications/Evernote.app
 cask install firefox #/Applications/Firefox.app
 cask install forklift #/Applications/ForkLift.app
+cask install geekbench #/Applications/Geekbench 3.app
 cask install google-chrome #/Applications/Google Chrome.app
 cask install google-japanese-ime #/Applications/GoogleJapaneseInput.localized
 cask install iterm2 #/Applications/iTerm.app
@@ -54,72 +36,4 @@ cask install sourcetree #/Applications/SourceTree.app
 cask install textexpander #/Applications/TextExpander.app
 
 # Cask is found, but no applications are found (could be fonts, system settins, or installed in other directory.
-#cask install seil
 cask install xmarks-safari
-
-# Apps installed directly instead of by Cask in brew-cask
-#cask install powerphotos #/Applications/Photos.app
-
-# Apps installed from AppStore
-#/Applications/GarageBand.app
-#/Applications/iMovie.app
-#/Applications/iPhoto.app
-#/Applications/Keynote.app
-#/Applications/LINE.app
-#/Applications/MiniUsage.app
-#/Applications/Numbers.app
-#/Applications/Pages.app
-#/Applications/QaLL.app
-
-# Apps installed but no casks are available
-# (System applications or directory installed.)
-#/Applications/App Store.app
-#/Applications/Automator.app
-#/Applications/Calculator.app
-#/Applications/Calendar.app
-#/Applications/Chess.app
-#/Applications/Contacts.app
-#/Applications/Dashboard.app
-#/Applications/Dictionary.app
-#/Applications/DVD Player.app
-#/Applications/FaceTime.app
-#/Applications/Font Book.app
-#/Applications/Game Center.app
-#/Applications/iBooks.app
-#/Applications/Image Capture.app
-#/Applications/iTunes.app
-#/Applications/Launchpad.app
-#/Applications/Mail.app
-#/Applications/Maps.app
-#/Applications/Messages.app
-#/Applications/Mission Control.app
-#/Applications/Notes.app
-#/Applications/Photo Booth.app
-#/Applications/Preview.app
-#/Applications/QuickTime Player.app
-#/Applications/Reminders.app
-#/Applications/Safari.app
-#/Applications/Stickies.app
-#/Applications/System Preferences.app
-#/Applications/TextEdit.app
-#/Applications/Time Machine.app
-#/Applications/Xmarks for Safari.app
-#/Users/ejointjp/Applications/Chrome Apps.localized
-#/Applications/Utilities/Activity Monitor.app
-#/Applications/Utilities/AirPort Utility.app
-#/Applications/Utilities/Audio MIDI Setup.app
-#/Applications/Utilities/Bluetooth File Exchange.app
-#/Applications/Utilities/Boot Camp Assistant.app
-#/Applications/Utilities/ColorSync Utility.app
-#/Applications/Utilities/Console.app
-#/Applications/Utilities/Digital Color Meter.app
-#/Applications/Utilities/Disk Utility.app
-#/Applications/Utilities/Grab.app
-#/Applications/Utilities/Grapher.app
-#/Applications/Utilities/Keychain Access.app
-#/Applications/Utilities/Migration Assistant.app
-#/Applications/Utilities/Script Editor.app
-#/Applications/Utilities/System Information.app
-#/Applications/Utilities/Terminal.app
-#/Applications/Utilities/VoiceOver Utility.app
-#/Applications/Utilities/X11.app

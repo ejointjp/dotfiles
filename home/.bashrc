@@ -1,8 +1,5 @@
-# phpbrew
-source ~/.phpbrew/bashrc
-
 # homebrew
-alias cask="brew cask "
+alias cask="brew cask"
 
 # Web
 alias apachestart='sudo apachectl start'
@@ -18,23 +15,14 @@ alias npmi='npm i -D'
 
 # Application Shortcuts
 alias cot='open -g -a CotEditor' # ターミナルからCotEditorを開く
-alias safari='open -a safari' # ターミナルからSafariを開く
-alias console='open -a console' # ターミナルからコンソールを開く
-alias chrome='open -a Google\ Chrome' #ターミナルからChromeを開く
-alias tree='open -g -a SourceTree'
-alias write='open -a Write'
-alias sys='open -a "system preferences"'
-alias pocket='safari http://getpocket.com'
 
 # Directories & Files
-alias htdocs='open ~/Dropbox/Sites/htdocs'
-alias bashrc='open ~/Dropbox/backup/terminal/.bashrc'
-alias bashprofile='open ~/Dropbox/backup/terminal/.bash_profile'
-alias touchtxt='touch test.txt; cot test.txt'
-alias touchhtml='touch index.html; atom index.html'
+alias sites='open ~/Sites'
 alias dropbox='cd ~/Dropbox'
 
-alias wordpress='curl -O  http://ja.wordpress.org/latest-ja.tar.gz; tar -zxvf latest-ja.tar.gz; rm latest-ja.tar.gz'
+alias bashrc='atom ~/.bashrc'
+alias bashprofile='atom ~/.bash_profile'
+alias brewfile='atom ~/.bluefile'
 
 alias cpscceleton='cp -r ~/Sites/htdocs/scceleton/dist scceleton'
 alias gulppress='cp -r ~/Web/gulp/gulppress gulppress'
@@ -52,10 +40,6 @@ alias sasslink='ln -s ~/Libs/sass/libs;
 bourbonlink;
 neatlink;
 scceletonlink'
-
-# MAMP
-#alias mysql='/Applications/MAMP/Library/bin/mysql -u root -p'
-#alias php5.3='/Applications/MAMP/bin/php5.3/bin/php'
 
 # for shortcut
 alias up='cd ..'
@@ -75,20 +59,11 @@ alias greprn='grep -rn --exclude=*.svn*'
 alias bye='sudo shutdown -h now'
 alias source='source ~/.bashrc; source ~/.bash_profile'
 
-# for svn
-alias st='svn st'
-alias stu='svn st -u'
-alias sd='svn di'
-alias sdi='svn di'
-alias sad='svn add'
-alias sup='svn up'
-alias sci='svn ci'
-alias scim='svn ci -m'
 
 # for git
 alias gst='git status'
-alias gitcom='git commit -m'
 alias gdi='git diff'
 alias gdc='git diff --cached'
 alias gad='git add'
+alias gitcom='git commit -m'
 alias gitlog='git log --oneline'
