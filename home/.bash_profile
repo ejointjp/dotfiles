@@ -3,6 +3,9 @@ if [ -f ~/.bashrc ]; then
 . ~/.bashrc
 fi
 
+# Brew-File
+export HOMEBREW_BREWFILE=~/.brewfile
+
 # Homebrewでインストールしたパッケージを優先的に使う
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
@@ -11,7 +14,7 @@ export PATH=/usr/local/sbin:$PATH
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Nodebrew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+#export PATH=$HOME/.nodebrew/current/bin:$PATH
 
-# Homebrew php56
-export PATH=$(brew --prefix php56)/bin:$PATH
+# Homebrew php55
+# export PATH=$(brew --prefix php55)/bin:$PATH
