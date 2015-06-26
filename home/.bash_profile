@@ -17,4 +17,4 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 #export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # Homebrew php55
-# export PATH=$(brew --prefix php55)/bin:$PATH
+export PATH=$(brew --prefix php55)/bin:$PATH

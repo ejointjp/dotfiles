@@ -10,11 +10,13 @@ alias mysqlstop='mysql.server stop'
 alias webstart='apachestart; mysqlstart'
 alias webstop='apachestop; mysqlstop'
 
-# Apache, PHP
+# Apache, PHP, MySQL
 alias sethosts='sudo mv /etc/hosts /etc/hosts.original && sudo ln -s ~/Dropbox/Sites/apache/hosts /etc/hosts'
+alias setphpini55='mv /usr/local/etc/php/5.5/php.ini /usr/local/etc/php/5.5/php.ini.original && ln -s ~/Dropbox/Sites/apache/5.5/php.ini /usr/local/etc/php/5.5/php.ini'
 alias setphpini56='mv /usr/local/etc/php/5.6/php.ini /usr/local/etc/php/5.6/php.ini.original && ln -s ~/Dropbox/Sites/apache/5.6/php.ini /usr/local/etc/php/5.6/php.ini'
 alias sethttpdconf24='mv /usr/local/etc/apache2/2.4/httpd.conf /usr/local/etc/apache2/2.4/httpd.conf.original && ln -s ~/Dropbox/Sites/apache/2.4/httpd.conf /usr/local/etc/apache2/2.4/httpd.conf'
 alias setvhostsconf24='mv /usr/local/etc/apache2/2.4/extra/httpd-vhosts.conf //usr/local/etc/apache2/2.4/extra/httpd-vhosts.conf.original && ln -s ~/Dropbox/Sites/apache/2.4/httpd-vhosts.conf /usr/local/etc/apache2/2.4/extra/httpd-vhosts.conf'
+alias setmysql='mv /usr/local/var/mysql /usr/local/var/mysql.original && ln -s ~/Dropbox/Sites/mysql /usr/local/var/mysql'
 
 # npm
 alias npmi='npm i -D'
@@ -32,19 +34,20 @@ alias brewfile='atom ~/.brewfile'
 alias gitignore='atom ~/.gitignore'
 
 alias phpini56='atom /usr/local/etc/php/5.6/php.ini'
+alias phpini55='atom /usr/local/etc/php/5.5/php.ini'
 alias hosts='sudo atom /etc/hosts'
 alias httpdconf24='atom /usr/local/etc/apache2/2.4/httpd.conf'
 alias vhostsconf24='atom /usr/local/etc/apache2/2.4/extra/httpd-vhosts.conf'
 alias themes='open wp-content/themes/'
 alias gulppress='cp -r ~/Web/gulp/gulppress gulppress'
 alias gulpapp='cp -r ~/Web/gulp/gulpapp gulpapp'
-alias scceletonlink='ln -s ~/Git/scceleton && cp -r ~/Libs/sass/my-theme my-theme.original && cp ~/Libs/sass/style.scss style.scss.original'
 
+alias libscp='cp -r ~/Git/libs libs'
+alias scceletonlink='ln -s ~/Git/scceleton/app/scceleton'
+alias scceletonmythemecp='cp -r ~/Git/scceleton/app/my-theme my-theme.original'
+alias scceletonstylecp='cp ~/Git/scceleton/app/style.scss style.scss.original'
+alias scceletoninit='bourbon install && neat install && scceletonlink && scceletonmythemecp && scceletonstylecp && libscp'
 
-alias sasslink='ln -s ~/Libs/sass/libs;
-bourbonlink;
-neatlink;
-scceletonlink'
 
 # for shortcut
 alias up='cd ..'
