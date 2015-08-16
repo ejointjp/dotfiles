@@ -75,3 +75,10 @@ alias gdc='git diff --cached'
 alias gad='git add'
 alias gitcom='git commit -m'
 alias gitlog='git log --oneline'
+
+#cd の後に ls
+cdls ()
+{
+    \cd "$@" && ls
+}
+alias cd="cdls"
