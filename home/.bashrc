@@ -22,7 +22,7 @@ alias setmysql='mv /usr/local/var/mysql /usr/local/var/mysql.original && ln -s ~
 alias npmi='npm i -D'
 
 # Application Shortcuts
-alias cot='open -g -a CotEditor' # ターミナルからCotEditorを開く
+#alias cot='open -g -a CotEditor' # ターミナルからCotEditorを開く
 
 # Directories & Files
 alias sites='open ~/Sites'
@@ -48,6 +48,8 @@ alias scceletonmythemecp='cp -r ~/Git/scceleton/app/my-theme my-theme.original'
 alias scceletonstylecp='cp ~/Git/scceleton/app/style.scss style.scss.original'
 alias scceletoninit='bourbon install && neat install && scceletonlink && scceletonmythemecp && scceletonstylecp && libscp'
 
+#for WP-CLI
+alias wpinstall='wp core download --locale=ja'
 
 # for shortcut
 alias up='cd ..'
