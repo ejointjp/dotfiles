@@ -3,8 +3,8 @@ if [ -f ~/.bashrc ]; then
 . ~/.bashrc
 fi
 
-# Brew-File
-export HOMEBREW_BREWFILE=~/.brewfile
+# Brew-file
+export HOMEBREW_BREWFILE=~/Brewfile
 
 # Homebrewでインストールしたパッケージを優先的に使う
 export PATH=/usr/local/bin:$PATH
