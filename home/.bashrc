@@ -26,11 +26,11 @@ alias npmi='npm i -D'
 
 # Directories & Files
 alias sites='open ~/Sites'
-alias dropbox='cd ~/Dropbox'
+alias dropbox='open ~/Dropbox'
 
 alias bashrc='atom ~/.bashrc'
 alias bashprofile='atom ~/.bash_profile'
-alias brewfile='atom ~/.brewfile'
+alias brewfile='atom /usr/local/Library/ejointjp_brewfile/Brewfile'
 alias gitignore='atom ~/.gitignore'
 
 alias phpini56='atom /usr/local/etc/php/5.6/php.ini'
@@ -67,7 +67,7 @@ alias sr='screen -d -R'
 alias grep='grep --exclude=*.svn*'
 alias greprn='grep -rn --exclude=*.svn*'
 alias bye='sudo shutdown -h now'
-alias source='source ~/.bashrc; source ~/.bash_profile'
+alias reload='source ~/.bashrc; source ~/.bash_profile'
 
 
 # for git
