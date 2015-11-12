@@ -30,7 +30,7 @@ alias dropbox='open ~/Dropbox'
 
 alias bashrc='atom ~/.bashrc'
 alias bashprofile='atom ~/.bash_profile'
-alias brewfile='atom /usr/local/Library/ejointjp_brewfile/Brewfile'
+alias brewfile='atom /opt/homebrew/Library/ejointjp_brewfile/Brewfile'
 alias gitignore='atom ~/.gitignore'
 
 alias phpini56='atom /opt/homebrew/etc/php/5.6/php.ini'
