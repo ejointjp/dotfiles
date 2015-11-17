@@ -4,10 +4,10 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # Homebrewでインストールしたパッケージを優先的に使う
-export PATH="/opt/homebrew/bin:$PATH"
-export PATH="/opt/homebrew/sbin:$PATH"
-# export PATH=/usr/local/bin:$PATH
-# export PATH=/usr/local/sbin:$PATH
+# export PATH="/opt/homebrew/bin:$PATH"
+# export PATH="/opt/homebrew/sbin:$PATH"
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
 
 # Homebrew php55
 export PATH=$(brew --prefix php55)/bin:$PATH
