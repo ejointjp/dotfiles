@@ -3,3 +3,4 @@
 *.log
 .sass-cache
 node_modules/
+ejointjp_brewfile/
