@@ -16,7 +16,7 @@ export PATH=$(brew --prefix php55)/bin:$PATH
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Brew-file
-# export HOMEBREW_BREWFILE=~/Brewfile
+export HOMEBREW_BREWFILE=~/.brewfile/Brewfile
 
 # Brew-wrap
 if [ -f $(brew --prefix)/etc/brew-wrap ];then
