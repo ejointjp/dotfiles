@@ -30,7 +30,7 @@ alias dropbox='open ~/Dropbox'
 
 alias bashrc='atom ~/.bashrc'
 alias bashprofile='atom ~/.bash_profile'
-alias brewfile='atom /usr/local/Library/ejointjp_brewfile/Brewfile'
+alias brewfile='atom ~/ejointjp_brewfile/Brewfile'
 alias gitignore='atom ~/.gitignore'
 
 alias phpini56='atom /usr/local/etc/php/5.6/php.ini'
@@ -42,12 +42,12 @@ alias themes='open wp-content/themes/'
 alias gulppress='cp -r ~/Web/gulp/gulppress gulppress'
 alias gulpapp='cp -r ~/Web/gulp/gulpapp gulpapp'
 
-alias libscp='cp -r ~/Git/libs libs'
-alias scceletonlink='ln -s ~/Git/scceleton/app/scceleton'
-alias scceletonmythemecp='cp -r ~/Git/scceleton/app/my-theme my-theme.original'
-alias scceletonstylecp='cp ~/Git/scceleton/app/style.scss style.scss.original'
-alias scceletoninit='bourbon install && neat install && scceletonlink && scceletonmythemecp && scceletonstylecp && libscp'
-
+# alias libscp='cp -r ~/Git/libs libs'
+# alias scceletonlink='ln -s ~/Git/scceleton/app/scceleton'
+# alias scceletonmythemecp='cp -r ~/Git/scceleton/app/my-theme my-theme.original'
+# alias scceletonstylecp='cp ~/Git/scceleton/app/style.scss style.scss.original'
+# alias scceletoninit='bourbon install && neat install && scceletonlink && scceletonmythemecp && scceletonstylecp && libscp'
+#
 #for WP-CLI
 alias wpinstall='wp core download --locale=ja'
 
@@ -81,6 +81,6 @@ alias gitlog='git log --oneline'
 #cd の後に ls
 cdls ()
 {
-    \cd "$@" && ls
+  \cd "$@" && ls
 }
 alias cd="cdls"
