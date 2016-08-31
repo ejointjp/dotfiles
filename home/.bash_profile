@@ -15,6 +15,10 @@ export PATH=$(brew --prefix php55)/bin:$PATH
 # Homebrewのシンボリックリンク保存先
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
+# Homebrew Cask の保存先
+export HOMEBREW_CASK_OPTS="--caskroom=/opt/homebrew-cask/Caskroom"
+
+
 # Brew-file
 export HOMEBREW_BREWFILE=~/.brewfile/Brewfile
 
@@ -22,3 +26,5 @@ export HOMEBREW_BREWFILE=~/.brewfile/Brewfile
 if [ -f $(brew --prefix)/etc/brew-wrap ];then
   source $(brew --prefix)/etc/brew-wrap
 fi
+
+export HOMEBREW_GITHUB_API_TOKEN="de99a01f4a0615e2ec7dd7dc286780bf7dbf5e19"
