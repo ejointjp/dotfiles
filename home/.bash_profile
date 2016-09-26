@@ -26,5 +26,3 @@ export HOMEBREW_BREWFILE=~/.brewfile/Brewfile
 if [ -f $(brew --prefix)/etc/brew-wrap ];then
   source $(brew --prefix)/etc/brew-wrap
 fi
-
-export HOMEBREW_GITHUB_API_TOKEN="de99a01f4a0615e2ec7dd7dc286780bf7dbf5e19"
