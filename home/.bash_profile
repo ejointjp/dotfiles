@@ -10,7 +10,8 @@ export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 
 # Homebrew php55
-export PATH=$(brew --prefix php55)/bin:$PATH
+# export PATH=$(brew --prefix php55)/bin:$PATH
+export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
 
 # Homebrewのシンボリックリンク保存先
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"

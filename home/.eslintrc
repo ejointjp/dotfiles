@@ -1,0 +1,129 @@
+{
+  env: {
+    browser: true,
+    commonjs: true,
+    node: true,
+    es6: true
+  },
+  extends: "eslint:recommended",
+  parserOptions: {
+    ecmaVersion: 6,
+    sourceType: "module"
+  },
+  rules: {
+    array-bracket-spacing: [
+      "error",
+      "never"
+    ],
+    block-spacing: 2,
+    brace-style: [
+      "error",
+      "1tbs",
+      {
+        allowSingleLine: true
+      }
+    ],
+    comma-spacing: [
+      "error",
+      {
+        before: false,
+        after: true
+      }
+    ],
+    comma-dangle: [
+      "error",
+      "never"
+    ],
+    comma-style: [
+      "error",
+      "last"
+    ],
+    computed-property-spacing: [
+      "error",
+      "never"
+    ],
+    consistent-this: [
+      "error",
+      "self"
+    ],
+    eol-last: [
+      "error"
+    ],
+    indent: [
+      "error",
+      2
+    ],
+    key-spacing: [
+      "error",
+      {
+        beforeColon: false,
+        afterColon: true,
+        mode: "minimum"
+      }
+    ],
+    linebreak-style: [
+      "error",
+      "unix"
+    ],
+    no-console: 0,
+    no-duplicate-case: [
+      "error"
+    ],
+    no-empty: [
+      "error"
+    ],
+    no-eval: 2,
+    no-multiple-empty-lines: [
+      "error",
+      {
+        max: 1
+      }
+    ],
+    no-nested-ternary: [
+      "error"
+    ],
+    no-unreachable: [
+      "error"
+    ],
+    no-trailing-spaces: [
+      "error"
+    ],
+    object-curly-spacing: [
+      "error",
+      "never"
+    ],
+    padded-blocks: [
+      "error",
+      "never"
+    ],
+    quotes: [
+      "error",
+      "single"
+    ],
+    semi-spacing: [
+      "error",
+      {
+        before: false,
+        after: true
+      }
+    ],
+    semi: [
+      "error",
+      "never"
+    ],
+    space-before-blocks: [
+      "error"
+    ],
+    space-before-function-paren: [
+      "error"
+    ],
+    space-in-parens: [
+      "error",
+      "never"
+    ],
+    space-infix-ops: [
+      "error"
+    ],
+    valid-typeof: 2
+  }
+}
