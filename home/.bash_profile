@@ -17,7 +17,7 @@ export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Homebrew Cask の保存先
-export HOMEBREW_CASK_OPTS="--caskroom=/opt/homebrew-cask/Caskroom"
+# export HOMEBREW_CASK_OPTS="--caskroom=/opt/homebrew-cask/Caskroom"
 
 
 # Brew-file
