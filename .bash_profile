@@ -9,9 +9,8 @@ fi
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 
-# Homebrew php55
-# export PATH=$(brew --prefix php55)/bin:$PATH
-export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
+# Nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # Homebrewのシンボリックリンク保存先
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
@@ -27,3 +26,9 @@ export HOMEBREW_BREWFILE=~/.brewfile/Brewfile
 if [ -f $(brew --prefix)/etc/brew-wrap ];then
   source $(brew --prefix)/etc/brew-wrap
 fi
+
+# 自作Shell置き場
+export PATH=$PATH:$HOME/Documents/bin
+
+export PATH="/usr/local/opt/php@7.2/bin:$PATH"
+export PATH="/usr/local/opt/php@7.2/sbin:$PATH"

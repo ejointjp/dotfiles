@@ -1,9 +1,0 @@
-{
-  "esnext": true,
-  "node": true,
-  "unused": true,
-  "undef": true,
-  "trailing": true,
-  "laxcomma": true,
-  "loopfunc": true
-}
