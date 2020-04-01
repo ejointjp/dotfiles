@@ -17,3 +17,6 @@ alias cd="cdls"
 
 # Homebrew
 export PATH="/usr/local/sbin:$PATH"
+
+# MySQL
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
