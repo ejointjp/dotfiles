@@ -5,7 +5,7 @@ alias npmupdate='npmupgrade'
 # For Homebrew
 alias brewfileupdate='rm -rf ~/Brewfile; brew bundle dump'
 alias brewfilepush='gist -u 57d1e583c54ff1a9c62ae54a597fa3e4 Brewfile'
-alias brewupgrade='brew upgrade && brew upgrade --cask && brew cleanup'
+alias brewupgrade='brew upgrade && brew upgrade --cask --greedy && brew cleanup'
 
 # For WP-CLI
 alias wpinstall='wp core download --locale=ja'
@@ -38,3 +38,4 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 export PATH="$HOME/.nodebrew/current/bin:$PATH"
 export PATH="/usr/local/bin/php-cs-fixer:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/.pyenv/shims:$PATH"

@@ -4,8 +4,8 @@
 	process = git-lfs filter-process
 	required = true
 [user]
-	name = ejointjp
-	email = mail@e-joint.jp
+	name = Takashi Fujisaki
+	email = takashi.fujisaki@ccube.co.jp
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -16,3 +16,7 @@
 	excludesfile = /Users/ejointjp/.gitignore_global
 [commit]
 	template = /Users/ejointjp/.stCommitMsg
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true
