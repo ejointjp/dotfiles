@@ -1,7 +1,3 @@
-# For npm
-alias npmupgrade='ncu -u && npm install && npm audit fix'
-alias npmupdate='npmupgrade'
-
 # For Homebrew
 alias brewfileupdate='rm -rf ~/Brewfile; brew bundle dump'
 alias brewfilepush='gist -u 57d1e583c54ff1a9c62ae54a597fa3e4 Brewfile'
@@ -27,6 +23,7 @@ function removegomi () {
 alias rmgomi=removegomi
 
 #
+export PATH="$PATH:/opt/homebrew/bin/"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="/usr/local/opt/php@7.4/bin:$PATH"
 export PATH="/usr/local/opt/php@7.4/sbin:$PATH"
