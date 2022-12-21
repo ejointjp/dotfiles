@@ -9,8 +9,8 @@ sudo softwareupdate --install-rosetta --agree-to-licensesudo softwareupdate --in
 
 ### シンボリックリンクの作成
 echo "シンボリックリンクを作成します..."
-chmod 775 ~/dotfiles/_link.sh
-~/dotfiles/_link.sh
+chmod 775 ./_link.sh
+./_link.sh
 
 #------------------------------------------
 # homebrew(arm64)
@@ -37,9 +37,9 @@ which /opt/homebrew/bin/brew >/dev/null 2>&1 && brew bundle --file ./Brewfile --
 echo "brew cleanupを実行します..."
 which brew >/dev/null 2>&1 && brew cleanup --verbose
 
-### プログラミング言語のインストール
-# echo "プログラミング言語をインストールします..."
-# ./_asdf.sh
+### スクリーンショットの設定
+echo "スクリーンショットの設定をします..."
+./_screenshot.sh
 
 
 
