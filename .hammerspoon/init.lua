@@ -1,34 +1,18 @@
--- フォルダを開く
-function openFolder(modifiers, key, path)
-  hs.hotkey.bind(modifiers, key, function()
-    hs.execute("open " .. path)
-  end)
-end
+dofile(hs.configdir .. "/dofile/autoCompressVideo.lua")
 
--- アプリを開く
-function launchApp(modifiers, key, appName)
-  hs.hotkey.bind(modifiers, key, function()
-    hs.application.launchOrFocus(appName)
-  end)
-end
+local hotKey = require("modules/hotKey")
 
--- URLを開く関数を定義
-function openURL(modifiers, key, url)
-  hs.hotkey.bind(modifiers, key, function()
-    hs.urlevent.openURL(url)
-  end)
-end
+hotKey.openFolder({"command", "control"}, "D", "~/Dropbox")
+hotKey.openFolder({"command", "control"}, "S", "~/Dropbox/_Screenshot")
 
-openFolder({"command", "control"}, "D", "~/Dropbox")
-openFolder({"command", "control"}, "P", "~/Dropbox/Projects")
-openFolder({"command", "control"}, "S", "~/Dropbox/_Screenshot")
+hotKey.launchApp({"command", "control"}, "J", "Google Chrome")
+hotKey.launchApp({"command", "control"}, "L", "Obsidian")
+hotKey.launchApp({"command", "control"}, "N", "Notion")
+hotKey.launchApp({"command", "control"}, ";", "Visual Studio Code");
+hotKey.launchApp({"command", "control"}, "space", "Hyper");
+hotKey.launchApp({"command", "control"}, "return", "Finder")
 
-launchApp({"command", "control"}, "J", "Google Chrome")
-launchApp({"command", "control"}, "O", "Obsidian")
-launchApp({"command", "control"}, "N", "Notion")
-launchApp({"command", "control"}, ";", "Visual Studio Code");
-launchApp({"command", "control"}, "space", "Hyper");
-launchApp({"command", "control"}, "return", "Finder")
+hotKey.openURL({"command", "control"}, "K", "https://chat.openai.com/?model=gpt-4")
 
-openURL({"command", "control"}, "K", "https://chat.openai.com/?model=gpt-4")
+hotKey.openFinderDirectory({"command", "control"}, "O", "Hyper")
 
