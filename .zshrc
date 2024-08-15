@@ -36,3 +36,6 @@ function remove_all_node_modules {
 export PATH=$PATH:/opt/homebrew/bin/
 # For nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# For MySQL
+export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
