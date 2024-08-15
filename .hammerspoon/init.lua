@@ -1,4 +1,4 @@
-dofile(hs.configdir .. "/dofile/autoCompressVideo.lua")
+--dofile(hs.configdir .. "/dofile/autoCompressVideo.lua")
 
 local hotKey = require("modules/hotKey")
 
@@ -11,7 +11,12 @@ hotKey.launchApp({"command", "control"}, ";", "Visual Studio Code");
 hotKey.launchApp({"command", "control"}, "space", "Hyper");
 hotKey.launchApp({"command", "control"}, "return", "Finder")
 hotKey.launchApp({"command", "control"}, "]", "ChatGPT")
+
 hotKey.openFinderDirectory({"command", "control"}, "O", "Hyper")
+
+hs.hotkey.bind({"control"}, "J", function()
+  hs.eventtap.keyStroke({}, "return")
+end)
 
 -- -- Google翻訳ショートカット（command + control + T）
 -- hs.hotkey.bind({"cmd", "ctrl"}, "T", function()
