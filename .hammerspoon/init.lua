@@ -32,15 +32,17 @@ end)
 --   end
 -- end)
 
+-- --
+
 -- Google翻訳ショートカット（command + control + T）
 -- Google翻訳の他のタブを閉じるバージョン
-hs.hotkey.bind({"cmd", "ctrl"}, "T", function()
+hs.hotkey.bind({"command", "control"}, "T", function()
   -- クリップボードの内容を取得
   local text = hs.pasteboard.getContents()
 
   -- テキストが存在する場合、Google翻訳を開く
   if text then
-      local url = "https://translate.google.com/?sl=auto&tl=en&text=" .. hs.http.encodeForQuery(text)
+      local url = "https://translate.google.com/?sl=auto&tl=ja&text=" .. hs.http.encodeForQuery(text)
       hs.osascript.applescript(string.format([[
           tell application "Google Chrome"
               if (count of windows) is 0 then
