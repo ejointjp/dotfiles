@@ -34,6 +34,11 @@ end)
 
 -- --
 
+-- Google Maps を開く
+hs.hotkey.bind({"command", "control"}, "M", function()
+    hs.urlevent.openURL("https://www.google.com/maps")
+end)
+
 -- Google翻訳ショートカット（command + control + T）
 -- Google翻訳の他のタブを閉じるバージョン
 hs.hotkey.bind({"command", "control"}, "T", function()
