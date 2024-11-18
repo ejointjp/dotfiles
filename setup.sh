@@ -8,10 +8,15 @@ echo "管理者パスワードを入力してください"
 sudo -v
 
 # パスワードキャッシュを維持
+# スクリプト実行中のみ `sudo` のキャッシュを更新
 while true; do
     sudo -n true
-    sleep 60
-done &
+    sleep 600
+done &  # バックグラウンドで実行
+CACHE_PID=$!  # プロセスIDを記録
+
+# スクリプト終了時にキャッシュ保持プロセスを停止
+trap "kill $CACHE_PID" EXIT
 
 # スクリーンショット設定
 echo "スクリーンショットの設定をします..."
