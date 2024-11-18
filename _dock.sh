@@ -1,7 +1,7 @@
 #参考: https://do-zan.com/mac-dock-terminalcommand-settings/
 
 # 画面上の位置
-defaults write com.apple.dock orientation -string "right"
+defaults write com.apple.dock orientation -string "bottom"
 
 # Dockを自動的に表示
 defaults write com.apple.dock autohide -bool true
