@@ -2,6 +2,7 @@
 alias brewfileupdate='rm -rf ~/Brewfile; brew bundle dump'
 alias brewfilepush='gist -u 57d1e583c54ff1a9c62ae54a597fa3e4 Brewfile'
 alias brewupgrade='brew upgrade && brew upgrade --cask && brew cleanup'
+alias brewbackup='~/bin/brewbackup.sh'
 
 ## shフォルダにパスを通す
 export PATH="/Users/fujisaki/Library/CloudStorage/Dropbox/sh:$PATH"
@@ -50,3 +51,5 @@ export PATH="/opt/homebrew/opt/php@8.2/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/php@8.2/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/php@8.2/include"
+
+
