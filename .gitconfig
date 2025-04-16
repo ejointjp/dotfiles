@@ -1,6 +1,6 @@
 [user]
-	name = ejointjp
-	email = mail@e-joint.jp
+	name = Takashi Fujisaki
+	email = fujisaki@yuiami.jp
 [core]
 	excludesfile = /Users/fujisaki/.gitignore_global
 [difftool "sourcetree"]
@@ -13,3 +13,8 @@
 	template = /Users/ejointjp/.stCommitMsg
 [init]
 	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
