@@ -22,22 +22,6 @@ hs.hotkey.bind({"command", "option"}, "F", function()
     hs.application.launchOrFocus("Finder")
 end)
 
--- -- Google翻訳ショートカット（command + control + T）
--- hs.hotkey.bind({"cmd", "ctrl"}, "T", function()
---   -- クリップボードの内容を取得
---   local text = hs.pasteboard.getContents()
-
---   -- テキストが存在する場合、Google翻訳を開く
---   if text then
---       local url = "https://translate.google.com/?sl=auto&tl=en&text=" .. hs.http.encodeForQuery(text)
---       hs.urlevent.openURL(url)
---   else
---       hs.alert.show("クリップボードにテキストがありません")
---   end
--- end)
-
--- --
-
 -- Google Maps を開く
 hs.hotkey.bind({"command", "control"}, "M", function()
     hs.urlevent.openURL("https://www.google.com/maps")
