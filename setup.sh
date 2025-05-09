@@ -84,6 +84,32 @@ else
 fi
 
 # Homebrew 確認と設定
+# BREW_PATH=$(which brew)
+# if [ -x "$BREW_PATH" ]; then
+#     echo "brew doctor を実行します..."
+#     brew doctor
+
+#     echo "brew update を実行します..."
+#     brew update --verbose
+
+#     echo "brew upgrade を実行します..."
+#     brew upgrade --verbose
+
+#     # Brewfile の適用
+#     if [ -f ./Brewfile ]; then
+#         echo "Brewfile で管理しているアプリケーションをインストールします..."
+#         brew bundle --file ./Brewfile --verbose
+#     else
+#         echo "Warning: Brewfile が見つかりません。スキップします。"
+#     fi
+
+#     echo "brew cleanup を実行します..."
+#     brew cleanup --verbose
+# else
+#     echo "Error: Homebrew が正しくインストールされていません。手動で確認してください。"
+# fi
+
+# Homebrew 確認と設定
 BREW_PATH=$(which brew)
 if [ -x "$BREW_PATH" ]; then
     echo "brew doctor を実行します..."
@@ -95,12 +121,30 @@ if [ -x "$BREW_PATH" ]; then
     echo "brew upgrade を実行します..."
     brew upgrade --verbose
 
-    # Brewfile の適用
-    if [ -f ./Brewfile ]; then
-        echo "Brewfile で管理しているアプリケーションをインストールします..."
-        brew bundle --file ./Brewfile --verbose
+    # Brewfile の選択
+    echo "使用する Brewfile を選択してください:"
+    echo "1) 通常版 Brewfile"
+    echo "2) サブ用 Brewfile.sub"
+    read -rp "選択 (1 or 2): " brewfile_choice
+
+    case "$brewfile_choice" in
+        1)
+            BREWFILE_PATH="./Brewfile/Brewfile"
+            ;;
+        2)
+            BREWFILE_PATH="./Brewfile/Brewfile.sub"
+            ;;
+        *)
+            echo "無効な選択です。スキップします。"
+            BREWFILE_PATH=""
+            ;;
+    esac
+
+    if [ -n "$BREWFILE_PATH" ] && [ -f "$BREWFILE_PATH" ]; then
+        echo "$BREWFILE_PATH で管理しているアプリケーションをインストールします..."
+        brew bundle --file="$BREWFILE_PATH" --verbose
     else
-        echo "Warning: Brewfile が見つかりません。スキップします。"
+        echo "Warning: $BREWFILE_PATH が存在しないか、未選択です。スキップします。"
     fi
 
     echo "brew cleanup を実行します..."
