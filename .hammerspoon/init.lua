@@ -18,6 +18,10 @@ hs.hotkey.bind({"control"}, "J", function()
   hs.eventtap.keyStroke({}, "return")
 end)
 
+hs.hotkey.bind({"command", "option"}, "F", function()
+    hs.application.launchOrFocus("Finder")
+end)
+
 -- -- Google翻訳ショートカット（command + control + T）
 -- hs.hotkey.bind({"cmd", "ctrl"}, "T", function()
 --   -- クリップボードの内容を取得
