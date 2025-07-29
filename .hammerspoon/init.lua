@@ -18,7 +18,7 @@ hs.hotkey.bind({"control"}, "J", function()
   hs.eventtap.keyStroke({}, "return")
 end)
 
-hs.hotkey.bind({"command", "option"}, "F", function()
+hs.hotkey.bind({"command", "option"}, "]", function()
     hs.application.launchOrFocus("Finder")
 end)
 
