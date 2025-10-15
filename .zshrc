@@ -4,6 +4,10 @@ alias brewfilepush='gist -u 57d1e583c54ff1a9c62ae54a597fa3e4 Brewfile'
 alias brewupgrade='brew upgrade && brew upgrade --cask && brew cleanup'
 alias brewbackup='~/bin/brewbackup.sh'
 
+# For Docker 
+alias dup='docker compose up -d'
+alias ddown='docker compose down'
+
 ## shフォルダにパスを通す
 export PATH="/Users/fujisaki/Library/CloudStorage/Dropbox/sh:$PATH"
 
@@ -36,6 +40,8 @@ function remove_all_node_modules {
   find . -name "node_modules" -type d -prune -exec rm -rf '{}' +
 }
 
+
+
 # For homebrew
 export PATH=$PATH:/opt/homebrew/bin/
 # For nodebrew
@@ -52,8 +58,10 @@ export PATH="/opt/homebrew/opt/php@8.2/sbin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/php@8.2/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/php@8.2/include"
 
+# For nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
