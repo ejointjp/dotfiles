@@ -1,0 +1,11 @@
+{
+  "diagnostics": {
+    "globals": ["hs", "spoon"]
+  },
+  "workspace": {
+    "checkThirdParty": false,
+    "library": [
+      "/Applications/Hammerspoon.app/Contents/Resources/extensions/hs"
+    ]
+  }
+}

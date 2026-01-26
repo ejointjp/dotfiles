@@ -1,3 +1,5 @@
+-- hotKey.launchApp({"command", "control"}, "]", "ChatGPT")
+
 -- ホットきーで実行する関数いろいろ
 local hotKey = {}
 
@@ -30,7 +32,7 @@ function hotKey.openFinderDirectory(modifiers, key, terminalApp)
         try
           set currentPath to (POSIX path of (target of front window as alias))
         on error
-          set currentPath to (POSIX path of (path to home folder as text)) 
+          set currentPath to (POSIX path of (path to home folder as text))
         end try
       end tell
     ]]
